@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="Assets/emmanuel-jose.ico" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://use.typekit.net/cxp2oct.css" />
+		<title>Design Patterns 101</title>
+	</head>
+	<body>
+		<a
+			><header class="banner" tabIndex="0">
+				<h1 class="title">Design Patterns 101</h1>
+				<h2 id="description">
+					The 23 Design Patterns for Object Oriented Programming by the Gang of Four (GoF)
+				</h2>
+				<h4 id="expand">
+					This demo is for educational purposes only. Sources: ©
+					<a
+						href="https://refactoring.guru/"
+						id="header-link"
+						tabindex="0"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Refactoring.Guru</a
+					>. Art by ©
+					<a href="https://zhart.us/" id="header-link" tabindex="0" target="_blank" rel="noopener noreferrer"
+						>Dmitry Zhart.</a
+					>
+					All Rights Reserved.
+				</h4>
+				<a
+					href="https://github.com/emjose/design-patterns-101/#header"
+					class="github-corner"
+					aria-label="View source on GitHub"
+					><svg
+						width="120"
+						height="120"
+						viewBox="0 0 250 250"
+						style="fill: #94281c; color: #d83e2d; position: absolute; top: 0; border: 0; right: 0"
+						aria-hidden="true"
+					>
+						<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+						<path
+							d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+							fill="currentColor"
+							style="transform-origin: 130px 106px"
+							class="octo-arm"
+						></path>
+						<path
+							d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+							fill="currentColor"
+							class="octo-body"
+						></path></svg></a
+				><style>
+					.github-corner:hover .octo-arm {
+						animation: octocat-wave 560ms ease-in-out;
+					}
+
+					@keyframes octocat-wave {
+						0%,
+						100% {
+							transform: rotate(0);
+						}
+						20%,
+						60% {
+							transform: rotate(-25deg);
+						}
+						40%,
+						80% {
+							transform: rotate(10deg);
+						}
+					}
+
+					@media (max-width: 500px) {
+						.github-corner:hover .octo-arm {
+							animation: none;
+						}
+						.github-corner .octo-arm {
+							animation: octocat-wave 560ms ease-in-out;
+						}
+					}
+				</style>
+			</header></a
+		>
+		<div class="card-container">
+			<!-- What are Design Patterns? -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Design Patterns</p>
+					<p id="card-content">
+						Design patterns are general solutions to commonly occurring problems in software design.
+						<br />
+						<br />
+						Patterns are <span id="strong">not</span> algorithms; they are high-level solutions with
+						flexible implementation.
+						<br />
+						<br />
+						<span id="strong">Analogy:</span> Blueprints or templates that are reusable & customizable.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/what-is-pattern"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-01.webp"
+					alt="Question mark inside a circle. Click for definition of design patterns."
+				/>
+			</div>
+			<!-- Creational -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Creational Patterns</p>
+					<p id="card-content">
+						First category of patterns.
+						<br />
+						<br />
+						Creational patterns provide mechanisms to create objects based on a required criterion and in a
+						controlled way.
+						<br />
+						<br />
+						<span id="strong">5 creational patterns:</span> Abstract Factory, Builder, Factory Method,
+						Prototype, and Singleton.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/creational-patterns"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-02.webp"
+					alt="An open hand underneath a gear connected to three circles. Click for definition of creational patterns."
+				/>
+			</div>
+			<!-- Structural -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Structural Patterns</p>
+					<p id="card-content">
+						Second category of patterns.
+						<br />
+						<br />
+						Structural patterns address how to assemble classes and objects to form larger structures and
+						provide new functionality.
+						<br />
+						<br />
+						<span id="strong">7 structural patterns:</span> Adapter, Bridge, Composite, Decorator, Facade,
+						Flyweight, and Proxy.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/structural-patterns"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-03.webp"
+					alt="A tree like diagram of rectangular objects. Click for definition of structural patterns."
+				/>
+			</div>
+			<!-- Behavioral -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Behavioral Patterns</p>
+					<p id="card-content">
+						Third category of patterns.
+						<br />
+						<br />
+						Behavioral patterns identify and address communication and responsibilities between objects.
+						<br />
+						<br />
+						<span id="strong">11 behavioral patterns:</span>
+						<span id="mini"
+							>Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer,
+							State, Strategy, Template Method, and Visitor.</span
+						>
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/behavioral-patterns"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-04.webp"
+					alt="Four puzzle pieces surrounding a gear. Click for definition of behavioral patterns."
+				/>
+			</div>
+			<!-- Creational: Abstract Factory -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Abstract Factory</p>
+					<p id="card-content">
+						In object-oriented programming, a <span id="strong">factory</span> is an object that creates
+						other objects.
+						<br />
+						<br />
+						An <span id="strong">Abstract Factory</span> has abstracted out a theme, and it produces
+						families of related or dependent objects without specifying their concrete classes.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/abstract-factory"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-05.webp"
+					alt="Diagrams of rectangles next to a factory. Click for definition of abstract factory."
+				/>
+			</div>
+			<!-- Creational: Builder -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Builder</p>
+					<p id="card-content">
+						Builder lets you construct complex objects step by step.
+						<br />
+						<br />
+						The Builder pattern separates the <span id="strong">construction</span> of an object from its
+						<span id="strong">representation</span>.
+						<br />
+						<br />
+						Builder allows the same construction process to create various representations.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/builder"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-06.webp"
+					alt="A construction hard hat next to a house divided into three parts. Click for definition of builder."
+				/>
+			</div>
+			<!-- Creational: Factory Method -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Factory Method</p>
+					<p id="card-content">
+						Factory Method (also known as Virtual Constructor) is used to replace class constructors.
+						<br />
+						<br />
+						Factory Method defines an interface for creating an object, but based on data or events, it lets
+						<span id="strong">subclasses</span> decide which class to instantiate.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/factory-method"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-07.webp"
+					alt="A factory next to a diagram of three rectangles. Click for definition of factory method."
+				/>
+			</div>
+			<!-- Creational: Prototype -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Prototype</p>
+					<p id="card-content">
+						Prototype (also known as Clone) allows you to clone existing objects without making your code
+						dependent on their classes.
+						<br />
+						<br />
+						New objects are created from an existing <span id="strong">prototypical instance</span>, thus
+						boosting performance and minimizing memory footprints.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/prototype"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-08.webp"
+					alt="Two robots standing upright. Click for definition of prototype."
+				/>
+			</div>
+			<!-- Creational: Singleton -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Singleton</p>
+					<p id="card-content">
+						Singleton restricts a class to only
+						<span id="strong">one single instance</span>.
+						<br />
+						<br />
+						Singleton provides a global point of access to this instance.
+						<br />
+						<br />Singleton is useful when exactly one object is needed to coordinate actions across the
+						system.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/singleton"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-09.webp"
+					alt="A tri-level medal podium, with each place occupied by the number 1. Click for definition of singleton."
+				/>
+			</div>
+			<!-- Structural: Adapter -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Adapter</p>
+					<p id="card-content">
+						Adapter (also known as Wrapper or Translator) allows classes with incompatible interfaces to
+						collaborate.
+						<br />
+						<br />
+						Without modifying the source code, the adapter <span id="strong">wraps</span> and converts the
+						interface of an existing class to match the interface of another class.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/adapter"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-10.webp"
+					alt="A power adapter flanked by two different plugs. Click for definition of adapter."
+				/>
+			</div>
+			<!-- Structural: Bridge -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Bridge</p>
+					<p id="card-content">
+						The Bridge pattern decouples, or splits, an <span id="strong">abstraction</span> from its
+						<span id="strong">implementation</span>, so that the two can develop independently.
+						<br />
+						<br />
+						Bridge can use encapsulation, aggregation, or inheritance to separate responsibilities into
+						different classes.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/bridge"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-11.webp"
+					alt="A suspension bridge tower with cables. Click for definition of bridge."
+				/>
+			</div>
+			<!-- Structural: Composite -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Composite</p>
+					<p id="card-content">
+						Composite (also known as Object Tree) creates a composition of objects in a tree structure to
+						represent <span id="strong">part-whole hierarchies</span>. Each object may be a simple or
+						composite object.
+						<br />
+						<br />
+						Composite allows you to treat individual objects and compositions uniformly.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/composite"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-12.webp"
+					alt="A tree diagram of rectangles in the loose shape of a triangle. Click for definition of composite."
+				/>
+			</div>
+			<!-- Structural: Decorator -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Decorator</p>
+					<p id="card-content">
+						The Decorator pattern (also known as Wrapper) extends (or decorates) an object’s behavior
+						dynamically, <span id="strong">without making a new subclass</span>.
+						<br />
+						<br />
+						Multiple decorators can add or override behaviors in an existing method of an object by
+						"wrapping" around the object.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/decorator"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-13.webp"
+					alt="A paint roller next to a Matryoshka doll, the Russian nesting doll. Click for definition of decorator."
+				/>
+			</div>
+			<!-- Structural: Facade -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Facade</p>
+					<p id="card-content">
+						The Facade pattern provides a <span id="strong">simplified interface</span> to a library, a
+						framework, or any other complex system.
+						<br />
+						<br />
+						By masking interaction with more complex components in the larger system, the facade improves
+						<span id="strong">readability</span> and <span id="strong">usability</span> for the client.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/facade"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-14.webp"
+					alt="A Roman architectural building with 5 columns. Click for definition of facade."
+				/>
+			</div>
+			<!-- Structural: Flyweight -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Flyweight</p>
+					<p id="card-content">
+						The Flyweight pattern (also known as Cache) reduces the cost of creating and manipulating a
+						large number of similar objects.
+						<br />
+						<br />
+						Flyweight minimizes memory usage by
+						<span id="strong">sharing common parts of state</span> between multiple objects instead of
+						keeping all of the data in each object.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/flyweight"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-15.webp"
+					alt="A balance scale with each arm supporting a box, and the left arm is lower. Click for definition of flyweight."
+				/>
+			</div>
+			<!-- Structural: Proxy -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Proxy</p>
+					<p id="card-content">
+						The Proxy pattern provides a <span id="strong">placeholder</span> for another object to control
+						access, reduce cost, and reduce complexity.
+						<br />
+						<br />
+						A proxy controls access to the original object, allowing actions to be performed
+						<span id="strong">before or after the request</span>
+						to the original object.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/proxy"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-16.webp"
+					alt="A diagram of an arrow showing the placement of a box inside a larger rectilinear shape. Click for definition of proxy."
+				/>
+			</div>
+			<!-- Behavioral: Chain of Responsibility -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title-small">Chain of Responsibility</p>
+					<p id="card-content">
+						Chain of Responsibility (also known as Chain of Command) lets you pass requests along
+						<span id="strong">a chain of handlers</span>. Each handler decides to process or to pass the
+						request to the next handler in the chain.
+						<br />
+						<br />
+						The pattern is essentially <span id="strong">a linear search</span> for an object that can
+						handle a particular request.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/chain-of-responsibility"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-17.webp"
+					alt="Chain links underneath an arrow that is bouncing across the tops of five boxes. Click for definition of chain of responsibility. "
+				/>
+			</div>
+			<!-- Behavioral: Command -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Command</p>
+					<p id="card-content">
+						The Command pattern (also known as Action or Transaction)
+						<span id="strong">encapsulates actions as objects</span>
+						that contain all parameters.
+						<br />
+						<br />
+						This transformation lets you pass requests as method arguments, delay or queue a request’s
+						execution, and support undoable operations.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/command"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-18.webp"
+					alt="Four rectangles with icons of a floppy disc, a folder, scissors, and a printer. Click for definition of command."
+				/>
+			</div>
+			<!-- Behavioral: Interpreter -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Interpreter</p>
+					<p id="card-content">
+						The Interpreter pattern defines a grammatical representation for a language and provides an
+						interpreter to process grammar.
+						<br />
+						<br />
+						<span id="strong">Interpreter maps:</span>
+						<br />
+						• a domain to a language,
+						<br />
+						• the language to a grammar,
+						<br />
+						• the grammar to a hierarchical &nbsp;&nbsp;object-oriented design.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://sourcemaking.com/design_patterns/interpreter"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-19.webp"
+					alt="An open faced book with a magnifying glass on the right page. Click for definition of interpreter."
+				/>
+			</div>
+			<!-- Behavioral: Iterator -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Iterator</p>
+					<p id="card-content">
+						The Iterator pattern lets you <span id="strong">sequentially traverse</span> elements of a
+						collection or container without exposing its underlying representation (data structures like
+						lists, stacks, trees, etc.).
+						<br />
+						<br />
+						For traversal to occur, the iterator decouples algorithms from containers.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/iterator"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-20.webp"
+					alt="A hiker with a backpack, walking above a row of six boxes. Click for definition of iterator."
+				/>
+			</div>
+			<!-- Behavioral: Mediator -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Mediator</p>
+					<p id="card-content">
+						The Mediator pattern (also known as Intermediary or Controller)
+						<span id="strong">reduces chaotic dependencies</span> between objects.
+						<br />
+						<br />
+						The pattern restricts direct interaction between objects and facilitates communication and
+						collaboration via a mediator object.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/mediator"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-21.webp"
+					alt="Five rectangles arranged in a cross formation. Arrows connect the center rectangle to the other four rectangles. Click for definition of mediator."
+				/>
+			</div>
+			<!-- Behavioral: Memento -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Memento</p>
+					<p id="card-content">
+						The Memento pattern (also known as Snapshot) provides the ability to save and restore an object
+						to its
+						<span id="strong">previous state</span> (undo via rollback).
+						<br />
+						<br />
+						The memento object (the unique snapshot of state) is an
+						<span id="strong">opaque object</span> (the object that no one can or should change).
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/memento"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-22.webp"
+					alt="A paper document being saved into a floppy disc. Click for definition of memento."
+				/>
+			</div>
+			<!-- Behavioral: Observer -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Observer</p>
+					<p id="card-content">
+						The Observer pattern (also known as Event-Subscriber or Listener) offers a
+						<span id="strong">subscription mechanism</span> to notify objects when events or changes in
+						state occur.
+						<br />
+						<br />
+						The observer pattern promotes <span id="strong">loose coupling</span> between the subject and
+						the observers.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/observer"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-23.webp"
+					alt="Gray binoculars facing towards the viewer. Click for definition of observer."
+				/>
+			</div>
+			<!-- Behavioral: State -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">State</p>
+					<p id="card-content">
+						The State design pattern allows an object to <span id="strong">alter its behavior</span> when
+						its <span id="strong">internal state</span> changes. It appears as if the object changed its
+						class.
+						<br />
+						<br />
+						State is a cleaner way for an object to change its behavior at runtime without resorting to
+						conditional statements.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/state"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-24.webp"
+					alt="A paper document next to a circular diagram of rectangles with clockwise moving arrows. Click for definition of state."
+				/>
+			</div>
+			<!-- Behavioral: Strategy -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Strategy</p>
+					<p id="card-content">
+						The Strategy pattern (also known as Policy) lets you define a family of algorithms, place each
+						into separate classes (strategies), and <span id="strong">make them interchangeable</span>.
+						<br />
+						<br />
+						The pattern enables fast switching between algorithms, meaning algorithms can be selected
+						on-the-fly at runtime.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/strategy"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-25.webp"
+					alt="A paper document next to a diagram of three rectangles that contain icons for a hand, sword, and shield."
+				/>
+			</div>
+			<!-- Behavioral: Template Method -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Template Method</p>
+					<p id="card-content">
+						The Template Method defines the <span id="strong">skeleton of an algorithm</span> as an abstract
+						class, but allows <span id="strong">subclasses</span> to provide concrete behavior.
+						<br />
+						<br />
+						The subclasses can redefine certain steps of an algorithm without changing the algorithm's
+						structure.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/template-method"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-26.webp"
+					alt="Three rectangles arranged in a triangle formation, connected with lines. Click for definition of template method."
+				/>
+			</div>
+			<!-- Behavioral: Visitor -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title">Visitor</p>
+					<p id="card-content">
+						The Visitor pattern is a way of <span id="strong">separating algorithms from objects</span> by
+						moving the hierarchy of methods into one object.
+						<br />
+						<br />
+						With the creation of a <span id="strong">visitor class</span>, you can add new operations and
+						functions to existing object structures without modifying the structures.
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/visitor"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-27.webp"
+					alt="A diagram of a small rectangle being cloned and placed inside the interior of four larger rectangles. Click for definition of visitor."
+				/>
+			</div>
+			<!-- History of Design Patterns -->
+			<div class="card" tabindex="0">
+				<div class="front">
+					<p id="card-title-small">History of Design Patterns</p>
+					<p id="card-content">
+						Software design patterns were first described in the 1994 book,
+						<span id="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</span>.
+						<br />
+						<br />
+						The authors are Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. They are known as
+						the
+						<span id="strong">"Gang of Four"</span> (GoF).
+					</p>
+					<p id="content-link">
+						<a
+							href="https://refactoring.guru/design-patterns/history"
+							tabindex="0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Learn more</a
+						>
+					</p>
+				</div>
+				<img
+					class="back"
+					src="Cards/card-28.webp"
+					alt="An hourglass with sand. Click for history of design patterns."
+				/>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- Emmanuel Jose logo and favicon. © Emmanuel Jose. All Rights Reserved. -->
