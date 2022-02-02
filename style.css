@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: darkmode-on, sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	color: #333;
+	line-height: 1.5;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	padding: 10px;
+	height: 120px;
+	width: 100%;
+	color: #ffedd6;
+	background-color: #d83e2d;
+	z-index: 10;
+	box-shadow: 4px 4px 16px #e9c1c1;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+header:hover,
+header:focus {
+	height: 220px;
+	background-color: #eb5439;
+}
+
+header:hover h1,
+header:focus h1 {
+	color: #fff4e6;
+}
+
+header:hover .github-corner svg path,
+header:focus .github-corner svg path {
+	color: #eb5439;
+	transition: all 0.3s ease-in-out;
+}
+
+#expand {
+	margin-top: 10px;
+	letter-spacing: 0.25px;
+}
+
+#header-link {
+	color: #ffedd6e0;
+	transition: all 0.4s ease-in-out;
+	font-weight: 700;
+}
+
+#header-link:hover,
+#header-link:focus {
+	color: #5a230d;
+}
+
+h2,
+h4 {
+	padding: 4px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: #ffedd6;
+}
+
+h4 {
+	font-size: 1.75em;
+	font-weight: 400;
+	color: #ffedd6e0;
+}
+
+#strong {
+	font-weight: 800;
+}
+
+#mini {
+	font-size: 0.85em;
+}
+
+#book-title {
+	font-style: italic;
+	font-weight: 600;
+}
+
+header a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header h1 {
+	margin-top: -15px;
+	font-family: "Roboto Slab", serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 8rem;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+.card-container {
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	place-content: center;
+	margin-top: 180px;
+	padding-bottom: 60px;
+}
+
+.card {
+	width: 302px;
+	height: 394px;
+	margin: 10px;
+	position: relative;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: rotateY(180deg);
+	-ms-transform-style: rotateY(180deg);
+	-o-transform-style: rotateY(180deg);
+	transition: transform 0.3s;
+	border-radius: 2rem;
+}
+
+.card:hover,
+.card:focus,
+.card:focus-within {
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transition: transform 0.3s ease 0.3s;
+}
+
+.front,
+.back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	border-radius: 2rem;
+	box-shadow: 4px 4px 16px #e9c1c1;
+	outline: 4px double #eb27276b;
+	-webkit-outline: 4px double #ba1d1d6b;
+	-moz-outline: 4px double #ba1d1d6b;
+	-ms-outline: 4px double #ba1d1d6b;
+	-o-outline: 4px double #ba1d1d6b;
+	outline-offset: -12px;
+	-webkit-outline-offset: -12px;
+	-moz-outline-offset: -12px;
+	-ms-outline-offset: -12px;
+	-o-outline-offset: -12px;
+}
+
+.front {
+	padding: 20px 22px;
+	background-color: white;
+	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+
+.front a {
+	text-decoration: none;
+}
+
+#card-title,
+#card-title-small {
+	margin-top: 5px;
+	color: #d83e2d;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+#card-title {
+	font-size: 2.35em;
+}
+
+#card-title-small {
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+
+#card-content {
+	color: rgb(92, 92, 92);
+	font-weight: 400;
+	line-height: 1.6;
+	font-size: 1.6em;
+	text-align: left;
+	height: 260px;
+}
+
+#content-link {
+	margin-top: 16px;
+	text-align: right;
+}
+
+#content-link a {
+	font-size: 1.1em;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+	color: rgba(41, 41, 41, 0.466);
+}
+
+#content-link a:hover,
+#content-link a:focus {
+	color: #d83e2d;
+	cursor: pointer;
+}
+
+:focus {
+	outline-color: #d83e2d;
+}
+
+@media (max-width: 1140px) {
+	#expand {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 930px) {
+	header {
+		height: 90px;
+	}
+
+	header:hover,
+	header:focus {
+		height: 180px;
+	}
+
+	header h1 {
+		font-size: 5em;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#description {
+		font-size: 1.75em;
+	}
+
+	#expand {
+		font-size: 1.3em;
+	}
+
+	.github-corner svg {
+		height: 90px;
+		width: 90px;
+	}
+}
+
+@media (max-width: 800px) {
+	#description {
+		font-size: 1.5em;
+	}
+
+	#expand {
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 685px) {
+	header {
+		height: 90px !important;
+	}
+
+	header h1 {
+		user-select: none !important;
+	}
+
+	header:hover,
+	header:focus {
+		background-color: #d83e2d !important;
+		pointer-events: none !important;
+	}
+
+	header:hover h1,
+	header:focus h1 {
+		color: #fff4e6 !important;
+		pointer-events: none !important;
+	}
+
+	#description,
+	#expand,
+	.github-corner {
+		display: none !important;
+		user-select: none !important;
+	}
+
+	.card-container {
+		margin-top: 125px;
+	}
+}
+
+@media (max-width: 500px) {
+	header h1 {
+		font-size: 3.25em;
+		padding-top: 22px;
+	}
+}
