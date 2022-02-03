@@ -26,6 +26,7 @@
 -   [100 Days of Code](#100days)
 -   [Installation](#installation)
 -   [Live Site](#live-site)
+-   [Issues](#issues)
 -   [Resources](#resources)
 -   [Copyright](#copyright)
 -   [Let's Connect!](#lets-connect)
@@ -51,6 +52,8 @@
     by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides (known as the the **Gang of Four**)
 
 -   The material and art are from <a href="https://refactoring.guru/">Refactoring.Guru</a> and <a href="https://zhart.us/">Dmitry Zhart</a>. Images formatted with Adobe Photoshop.
+
+-   **This app is best viewed on a desktop computer or a laptop, using a Chrome, Firefox, or Edge browser.**
 
 #
 
@@ -85,6 +88,24 @@ open index.html
 • A tab key press or a mouse click **outside** of the flipped card reverts that card to its original state.
 
 • On a touchscreen device: tapping another card will flip the previously selected card back to its initial state.
+
+#
+
+<p id="issues"><p>
+
+<a href=#issues>![Issues](Assets/inter-issues.png)</a>
+
+-   **This app is best viewed on a desktop computer or a laptop, using a Chrome, Firefox, or Edge browser.**
+
+-   The `:hover` and `:focus` pseudo classes are problematic on touchscreens, since there are no cursor/mouse devices present.
+
+-   **A remaining issue with touchscreen devices:** Tapping a card may yield a partial blue outline that doesn't correctly surround the card. However, cards will flip correctly when tapped.
+
+<br>
+
+<a href="https://design-patterns-101.vercel.app/">![Live Site](Assets/inter-issue-example.png)</a>
+
+The partial blue outline that may appear on touchscreen or mobile devices.
 
 #
 
