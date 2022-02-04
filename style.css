@@ -60,16 +60,16 @@ header:focus .github-corner svg path {
 #myBtn {
 	display: none;
 	position: fixed;
-	height: 50px;
-	width: 50px;
+	height: 46px;
+	width: 46px;
 	bottom: 15px;
 	right: 15px;
 	z-index: 99;
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #ffe6e3b9;
-	color: #d83e2d;
+	background-color: #ffe6e3d2;
+	color: #e97265;
 	cursor: pointer;
 	text-align: center;
 	border-radius: 50%;
@@ -351,5 +351,10 @@ p {
 	header h1 {
 		font-size: 3.25em;
 		padding-top: 22px;
+	}
+
+	#myBtn {
+		bottom: 8px;
+		right: 8px;
 	}
 }
