@@ -39,7 +39,7 @@
 
 ### Day 33: February 1, 2022
 
--   To begin learning about design patterns, I made flip cards by adapting my <a href="https://agile-101.vercel.app/">Agile 101 project</a>.
+-   To begin learning about design patterns, I made flip cards by adapting my <a href="https://github.com/emjose/agile-101/#header">Agile 101 project</a>.
 
 -   Design patterns are general solutions to commonly occurring problems in software design.
 
