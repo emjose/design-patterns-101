@@ -63,13 +63,13 @@
 
 #### Git clone and cd into the repo folder:
 
-```
+```console
 git clone git@github.com:emjose/design-patterns-101.git && cd design-patterns-101
 ```
 
 #### Run the command:
 
-```
+```console
 open index.html
 ```
 
@@ -80,6 +80,8 @@ open index.html
 <a href="https://design-patterns-101.vercel.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
 <a href="https://design-patterns-101.vercel.app/">![Live Site](Assets/033-design-patterns.gif)</a>
+
+<br>
 
 • Design Patterns 101 is keyboard accessible, and a mouse hover will flip a card over.
 
@@ -104,6 +106,8 @@ open index.html
 <br>
 
 <a href="https://design-patterns-101.vercel.app/">![Live Site](Assets/inter-issue-example.png)</a>
+
+<br>
 
 The partial blue outline that may appear on touchscreen or mobile devices.
 
@@ -144,7 +148,9 @@ The partial blue outline that may appear on touchscreen or mobile devices.
 <a href=#copyright>![Copyright](https://res.cloudinary.com/dn1e07eul/image/upload/v1659391383/Readme%20Headers/inter-copyright_ax53yz.png)</a>
 
 -   This project is for made for educational purposes only.
+
 -   Material copyright of © <a href="https://refactoring.guru/">Refactoring.Guru</a>. All Rights Reserved.
+
 -   Art copyright of © <a href="https://zhart.us/">Dmitry Zhart</a>. All Rights Reserved.
 
 #
