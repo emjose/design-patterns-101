@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700;800;900&display=swap");
 
+:root {
+	--red-1: #d83e2d;
+	--github-fill: #94281c;
+	--github-color: var(--red-1);
+	--text-color-1: #ffedd6;
+	--text-color-2: #ffedd6e0;
+	--text-color-3: #fff1f0;
+	--text-color-4: #fff4e6;
+	--card-outline: 4px double #ba1d1d6b;
+	--card-box-shadow: 4px 4px 16px #e9c1c1;
+	--hover-focus-color: #eb5439;
+	--card-transition: all 0.3s ease-in-out;
+	--header-transition: all 0.4s ease-in-out;
+	--button-background: #ffe6e3d2;
+	--button-color: #e97265;
+	--button-hover: #f8422e;
+	--link-hover: #5a230d;
+	--card-rotation: rotateY(180deg);
+	--body-color: #333;
+	--content-color: rgb(92, 92, 92);
+	--link-color: rgba(41, 41, 41, 0.466);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,7 +37,7 @@ body {
 	font-family: darkmode-on, sans-serif;
 	font-weight: 900;
 	font-style: normal;
-	color: #333;
+	color: var(--body-color);
 	line-height: 1.5;
 	height: 100vh;
 	position: relative;
@@ -32,29 +55,29 @@ header {
 	padding: 10px;
 	height: 120px;
 	width: 100%;
-	color: #ffedd6;
-	background-color: #d83e2d;
+	color: var(--text-color-1);
+	background-color: var(--red-1);
 	z-index: 10;
-	box-shadow: 4px 4px 16px #e9c1c1;
+	box-shadow: var(--card-box-shadow);
 	overflow: hidden;
-	transition: all 0.3s ease-in-out;
+	transition: var(--card-transition);
 }
 
 header:hover,
 header:focus {
 	height: 220px;
-	background-color: #eb5439;
+	background-color: var(--hover-focus-color);
 }
 
 header:hover h1,
 header:focus h1 {
-	color: #fff4e6;
+	color: var(--text-color-4);
 }
 
 header:hover .github-corner svg path,
 header:focus .github-corner svg path {
-	color: #eb5439;
-	transition: all 0.3s ease-in-out;
+	color: var(--hover-focus-color);
+	transition: var(--card-transition);
 }
 
 #myBtn {
@@ -68,16 +91,16 @@ header:focus .github-corner svg path {
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: #ffe6e3d2;
-	color: #e97265;
+	background-color: var(--button-background);
+	color: var(--button-color);
 	cursor: pointer;
 	text-align: center;
 	border-radius: 50%;
 }
 
 #myBtn:hover {
-	background-color: #f8422e;
-	color: #fff1f0;
+	background-color: var(--button-hover);
+	color: var(--text-color-3);
 }
 
 #expand {
@@ -86,14 +109,14 @@ header:focus .github-corner svg path {
 }
 
 #header-link {
-	color: #ffedd6e0;
-	transition: all 0.4s ease-in-out;
+	color: var(--text-color-2);
+	transition: var(--header-transition);
 	font-weight: 700;
 }
 
 #header-link:hover,
 #header-link:focus {
-	color: #5a230d;
+	color: var(--link-hover);
 }
 
 h2,
@@ -106,13 +129,13 @@ h2 {
 	font-size: 2em;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	color: #ffedd6;
+	color: var(--text-color-1);
 }
 
 h4 {
 	font-size: 1.75em;
 	font-weight: 400;
-	color: #ffedd6e0;
+	color: var(--text-color-2);
 }
 
 #strong {
@@ -158,15 +181,15 @@ p {
 }
 
 .card {
-	width: 302px;
+	min-width: 302px;
 	height: 394px;
 	margin: 10px;
 	position: relative;
 	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: rotateY(180deg);
-	-ms-transform-style: rotateY(180deg);
-	-o-transform-style: rotateY(180deg);
+	-moz-transform-style: var(--card-rotation);
+	-ms-transform-style: var(--card-rotation);
+	-o-transform-style: var(--card-rotation);
 	transition: transform 0.3s;
 	border-radius: 2rem;
 }
@@ -174,11 +197,11 @@ p {
 .card:hover,
 .card:focus,
 .card:focus-within {
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
+	transform: var(--card-rotation);
+	-webkit-transform: var(--card-rotation);
+	-moz-transform: var(--card-rotation);
+	-ms-transform: var(--card-rotation);
+	-o-transform: var(--card-rotation);
 	transition: transform 0.3s ease 0.3s;
 }
 
@@ -192,12 +215,12 @@ p {
 	-moz-backface-visibility: hidden;
 	-ms-backface-visibility: hidden;
 	border-radius: 2rem;
-	box-shadow: 4px 4px 16px #e9c1c1;
-	outline: 4px double #eb27276b;
-	-webkit-outline: 4px double #ba1d1d6b;
-	-moz-outline: 4px double #ba1d1d6b;
-	-ms-outline: 4px double #ba1d1d6b;
-	-o-outline: 4px double #ba1d1d6b;
+	box-shadow: var(--card-box-shadow);
+	outline: var(--card-outline);
+	-webkit-outline: var(--card-outline);
+	-moz-outline: var(--card-outline);
+	-ms-outline: var(--card-outline);
+	-o-outline: var(--card-outline);
 	outline-offset: -12px;
 	-webkit-outline-offset: -12px;
 	-moz-outline-offset: -12px;
@@ -208,11 +231,11 @@ p {
 .front {
 	padding: 20px 22px;
 	background-color: white;
-	transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
+	transform: var(--card-rotation);
+	-webkit-transform: var(--card-rotation);
+	-moz-transform: var(--card-rotation);
+	-ms-transform: var(--card-rotation);
+	-o-transform: var(--card-rotation);
 }
 
 .front a {
@@ -222,7 +245,7 @@ p {
 #card-title,
 #card-title-small {
 	margin-top: 5px;
-	color: #d83e2d;
+	color: var(--red-1);
 	font-weight: 600;
 	text-align: center;
 	padding-bottom: 15px;
@@ -238,7 +261,7 @@ p {
 }
 
 #card-content {
-	color: rgb(92, 92, 92);
+	color: var(--content-color);
 	font-weight: 400;
 	line-height: 1.6;
 	font-size: 1.6em;
@@ -255,17 +278,49 @@ p {
 	font-size: 1.1em;
 	letter-spacing: 0.5px;
 	font-weight: 400;
-	color: rgba(41, 41, 41, 0.466);
+	color: var(--link-color);
 }
 
 #content-link a:hover,
 #content-link a:focus {
-	color: #d83e2d;
+	color: var(--red-1);
 	cursor: pointer;
 }
 
 :focus {
-	outline-color: #d83e2d;
+	outline-color: var(--red-1);
+}
+
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
 }
 
 @media (max-width: 1140px) {
@@ -325,13 +380,13 @@ p {
 
 	header:hover,
 	header:focus {
-		background-color: #d83e2d !important;
+		background-color: var(--red-1) !important;
 		pointer-events: none !important;
 	}
 
 	header:hover h1,
 	header:focus h1 {
-		color: #fff4e6 !important;
+		color: var(--text-color-4) !important;
 		pointer-events: none !important;
 	}
 
