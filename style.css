@@ -14,7 +14,6 @@
 	--dark-hover: #c1270c;
 	--dark-fill: #620f00;
 	--card-transition: all 0.3s ease-in-out;
-	--header-transition: all 0.4s ease-in-out;
 	--button-background: #ffe6e3d2;
 	--button-color: #e97265;
 	--button-hover: #f8422e;
@@ -65,10 +64,25 @@ header {
 	transition: var(--card-transition);
 }
 
+#header-link a,
+#description,
+#expand {
+	visibility: hidden;
+}
+
 header:hover,
 header:focus {
 	height: 220px;
 	background-color: var(--dark-hover);
+}
+
+header:hover #header-link a,
+header:focus #header-link a,
+header:hover #description,
+header:focus #description,
+header:hover #expand,
+header:focus #expand {
+	visibility: visible;
 }
 
 header:hover h1,
@@ -114,7 +128,6 @@ header:focus .github-corner svg path {
 
 #header-link {
 	color: var(--text-color-2);
-	transition: var(--header-transition);
 	font-weight: 700;
 }
 
