@@ -1,6 +1,6 @@
 const mybutton = document.getElementById("myBtn");
 
-function swRegistration() {
+function swRegistration () {
     const heart = ["font-size: 20px", "padding: 12px", "margin: 4px 0 4px 4px", "color: rgba(238,58,136,1)"].join(";");
     if ("serviceWorker" in navigator) {
         navigator.serviceWorker
@@ -14,7 +14,7 @@ function swRegistration() {
     }
 }
 
-function consoleText() {
+function consoleText () {
     console.clear();
     const styles = [
         "color: white",
@@ -39,7 +39,6 @@ function consoleText() {
     console.log("%cPortfolio%chttps://bit.ly/3QQr1Ux", gradient, styles2);
     console.log("%cLinkedin %chttps://bit.ly/3cygAD4", gradient, styles2);
     console.log("%cGithub   %chttps://bit.ly/3iwQC6U", gradient, styles2);
-    // GENERATE THE BITLY REPO LINK:
     console.log("%cThe README   %chttps://bit.ly/3dMnKXW", gradient, styles2);
     console.log("%cHave a wonderful day!", styles2);
 }
@@ -47,13 +46,11 @@ function consoleText() {
 swRegistration();
 consoleText();
 
-
-
 window.onscroll = function () {
     scrollFunction();
 };
 
-function scrollFunction() {
+function scrollFunction () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
     } else {
@@ -61,7 +58,7 @@ function scrollFunction() {
     }
 }
 
-function topFunction() {
+function topFunction () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
