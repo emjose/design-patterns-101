@@ -117,8 +117,6 @@ open index.html
 
 <a href="https://design-patterns-101.vercel.app/">![Live Site](Assets/inter-issue-example.png)</a>
 
-<br>
-
 The partial blue outline that may appear on touchscreen or mobile devices.
 
 <br>
