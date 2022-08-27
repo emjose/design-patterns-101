@@ -55,6 +55,8 @@
 
 -   **This app is best viewed on a desktop computer or a laptop, using a Chrome, Firefox, or Edge browser.**
 
+<br>
+
 #
 
 <p id="installation"><p>
@@ -73,6 +75,8 @@ git clone git@github.com:emjose/design-patterns-101.git && cd design-patterns-10
 open index.html
 ```
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -83,13 +87,17 @@ open index.html
 
 <br>
 
-• Design Patterns 101 is keyboard accessible, and a mouse hover will flip a card over.
+• **[Design Patterns 101](https://design-patterns-101.vercel.app/)** is keyboard accessible, and a mouse hover will flip a card over.
+
+• **[Design Patterns 101](https://design-patterns-101.vercel.app/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
 
 • Pressing the tab key (or a mouse click) will **pause** a selected card in its flipped state.
 
 • A tab key press or a mouse click **outside** of the flipped card reverts that card to its original state.
 
 • On a touchscreen device: tapping another card will flip the previously selected card back to its initial state.
+
+<br>
 
 #
 
@@ -99,7 +107,7 @@ open index.html
 
 -   **This app is best viewed on a desktop computer or a laptop, using a Chrome, Firefox, or Edge browser.**
 
--   The `:hover` and `:focus` pseudo classes are problematic on touchscreens, since there are no cursor/mouse devices present.
+-   The **`:hover`** and **`:focus`** pseudo classes are problematic on touchscreens, since there are no cursor/mouse devices present.
 
 -   **A remaining issue with touchscreen devices:** Tapping a card may yield a partial blue outline that doesn't correctly surround the card. However, cards will flip correctly when tapped.
 
@@ -110,6 +118,8 @@ open index.html
 <br>
 
 The partial blue outline that may appear on touchscreen or mobile devices.
+
+<br>
 
 #
 
@@ -141,6 +151,8 @@ The partial blue outline that may appear on touchscreen or mobile devices.
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
 
+<br>
+
 #
 
 <p id="copyright"><p>
@@ -152,6 +164,8 @@ The partial blue outline that may appear on touchscreen or mobile devices.
 -   Material copyright of © <a href="https://refactoring.guru/">Refactoring.Guru</a>. All Rights Reserved.
 
 -   Art copyright of © <a href="https://zhart.us/">Dmitry Zhart</a>. All Rights Reserved.
+
+<br>
 
 #
 
