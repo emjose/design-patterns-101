@@ -10,10 +10,9 @@
 	--text-color-4: #fff4e6;
 	--card-outline: 4px double #ba1d1d6b;
 	--focus-outline: 4px solid var(--red-1);
+	--header-focus: 4px solid black;
 	--card-box-shadow: 4px 4px 16px #e9c1c1;
-	--hover-focus-color: #eb5439;
 	--dark-hover: #c1270c;
-	--dark-fill: #620f00;
 	--card-transition: all 0.3s ease-in-out;
 	--button-background: #ffe6e3d2;
 	--button-color: #e97265;
@@ -47,8 +46,8 @@ body {
 	justify-content: center;
 }
 
-.title {
-	text-align: center;
+:focus {
+	outline-color: var(--red-1);
 }
 
 header {
@@ -65,27 +64,15 @@ header {
 	transition: var(--card-transition);
 }
 
-#header-link a,
-#description,
-#expand {
-	visibility: hidden;
-}
-
 header:hover,
 header:focus {
 	height: 220px;
 	background-color: var(--dark-hover);
 }
 
-
-
-header:hover #header-link a,
-header:focus #header-link a,
-header:hover #description,
-header:focus #description,
-header:hover #expand,
-header:focus #expand {
-	visibility: visible;
+header:focus {
+	outline-offset: -4px;
+	outline: var(--header-focus);
 }
 
 header:hover h1,
@@ -93,38 +80,14 @@ header:focus h1 {
 	color: var(--text-color-4);
 }
 
+header:focus-within {
+	height: 220px;
+}
+
 header:hover .github-corner svg path,
 header:focus .github-corner svg path {
 	color: var(--dark-hover);
 	transition: var(--card-transition);
-}
-
-#myBtn {
-	display: none;
-	position: fixed;
-	height: 46px;
-	width: 46px;
-	bottom: 15px;
-	right: 15px;
-	z-index: 99;
-	font-size: 18px;
-	border: none;
-	outline: none;
-	background-color: var(--button-background);
-	color: var(--button-color);
-	cursor: pointer;
-	text-align: center;
-	border-radius: 50%;
-}
-
-#myBtn:hover {
-	background-color: var(--button-hover);
-	color: var(--text-color-3);
-}
-
-#expand {
-	margin-top: 10px;
-	letter-spacing: 0.25px;
 }
 
 #header-link {
@@ -137,15 +100,34 @@ header:focus .github-corner svg path {
 	color: var(--link-hover);
 }
 
-header:focus-within {
-	height: 220px;
+#header-link a,
+#description,
+#expand {
+	visibility: hidden;
 }
 
+header:hover #header-link a,
+header:focus #header-link a,
+header:hover #description,
+header:focus #description,
+header:hover #expand,
+header:focus #expand {
+	visibility: visible;
+}
 
 header:focus-within #header-link a,
 header:focus-within #description,
 header:focus-within #expand {
 	visibility: visible;
+}
+
+.title {
+	text-align: center;
+}
+
+#expand {
+	margin-top: 10px;
+	letter-spacing: 0.25px;
 }
 
 h2,
@@ -234,6 +216,10 @@ p {
 	transition: transform 0.3s ease 0.3s;
 }
 
+.card:focus {
+	outline: var(--focus-outline);
+}
+
 .front,
 .back {
 	width: 100%;
@@ -316,18 +302,8 @@ p {
 	cursor: pointer;
 }
 
-:focus {
-	outline-color: var(--red-1);
-	/* outline: var(--focus-outline); */
-}
-
-.card:focus {
-	outline: var(--focus-outline);
-}
-
 .github-corner:focus svg path {
 	fill: black;
-
 }
 
 .github-corner:focus .octo-arm,
@@ -335,8 +311,32 @@ p {
 	fill: var(--red-1);
 }
 
-.github-corner:hover .octo-arm {
+.github-corner:hover .octo-arm,
+.github-corner:focus .octo-arm {
 	animation: octocat-wave 560ms ease-in-out;
+}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	height: 46px;
+	width: 46px;
+	bottom: 15px;
+	right: 15px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: var(--button-background);
+	color: var(--button-color);
+	cursor: pointer;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#myBtn:hover {
+	background-color: var(--button-hover);
+	color: var(--text-color-3);
 }
 
 @keyframes octocat-wave {
@@ -450,6 +450,11 @@ p {
 	header h1 {
 		font-size: 3.25em;
 		padding-top: 22px;
+	}
+
+	.card:focus {
+		outline: none !important;
+		border: 3px solid var(--red-1) !important;
 	}
 
 	#myBtn {
