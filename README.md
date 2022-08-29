@@ -109,9 +109,17 @@ open index.html
 
 -   **This app is best viewed on a desktop computer or a laptop, using a Chrome, Firefox, or Edge browser.**
 
--   The **`:hover`** and **`:focus`** pseudo classes are problematic on touchscreens, since there are no cursor/mouse devices present.
+-   Like its sister project **[Agile 101](https://agile-101.vercel.app/)**, the **[Design Patterns 101](https://design-patterns-101.vercel.app/)** cards didn't flip correctly on a mobile phone.
 
--   **A remaining issue with touchscreen devices:** Tapping a card may yield a partial blue outline that doesn't correctly surround the card. However, cards will flip correctly when tapped.
+-   The primary issue is that <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover">the `:hover` pseudo class is problematic on touchscreens</a>.
+
+-   Stack Overflow questions ( <a href="https://stackoverflow.com/questions/22559756/changing-hover-to-touch-click-for-mobile-devices">One</a> • <a href="https://stackoverflow.com/questions/19792575/css3-flip-functionality-problems-with-backface-visibility">Two</a> ) led to the solutions of adding **`:focus`** to CSS properties and **`tabindex="0"`** to HTML elements.
+
+-   The <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix">vendor prefixes</a> (`-webkit-`, `-moz-`, `-ms-`, `-o-`) were also added to the transform and backface-visibility CSS properties.
+
+-   **An issue with some touchscreen devices:** Tapping a card may yield a partial blue outline that doesn't correctly surround the card. However, cards will flip correctly when tapped.
+
+-   **August 2022 update:** The partial blue outline issue was resolved by disabling the outline property and enabling the border property for the **`:focus`** state in a mobile media query.
 
 <br>
 
